@@ -1,14 +1,6 @@
-# name: Build ZMK firmware
-# on: [push, pull_request, workflow_dispatch]
-
-# jobs:
-#   build:
-#     uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
-
-
-include:
-  - board: nice_nano_v2
-    shield: corne_hw_left
-
-  - board: nice_nano_v2
-    shield: corne_hw_right
+name: Build ZMK firmware
+on: [push, pull_request, workflow_dispatch]
+#teste
+jobs:
+  build:
+    uses: zmkfirmware/zmk/.github/workflows/build-user-config.yml@v0.3
